@@ -1,3 +1,3 @@
 def call(){
-    sh '/opt/maven/bin/mvn test'
+    sh '/opt/maven/bin/mvn -eX test'
 }
