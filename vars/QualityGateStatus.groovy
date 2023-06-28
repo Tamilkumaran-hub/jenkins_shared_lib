@@ -1,9 +1,8 @@
 
-
 def call(credentialsId){
-    withSonarQubeEnv(credentialsId: credentialsId) {
-        waitForQualityGate abortPipeline: false, credentialsId: 'sonar'
-    }
+
+    waitForQualityGate abortPipeline: false, credentialsId: credentialsId
+
 }
 
 
