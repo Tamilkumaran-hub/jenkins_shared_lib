@@ -2,8 +2,7 @@
 
 def call(){
 
-    //waitForQualityGate abortPipeline: false, credentialsId: 'sonar'
-    waitForQualityGate abortPipeline: false
+    waitForQualityGate abortPipeline: false, credentialsId: 'sonar'
 
 }
 
